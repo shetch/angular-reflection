@@ -8,27 +8,29 @@
         <a target="_blank" href="{{recipe.strYoutube}}" class="btn btn-danger mt-3 mb-3"><i class="fab fa-youtube"></i> Watch Preparation</a>
     </div>
     <div class="col-md-2 col-lg-3"> 
-        <h6 class="mt-1 mb-2 text-info">Ingredients</h6>
-        <h6>{{ recipe.strMeasure1 }} {{ recipe.strIngredient1 }}</h6>
-        <h6>{{ recipe.strMeasure2 }} {{ recipe.strIngredient2 }}</h6>
-        <h6>{{ recipe.strMeasure3 }} {{ recipe.strIngredient3 }}</h6>
-        <h6>{{ recipe.strMeasure4 }} {{ recipe.strIngredient4 }}</h6>
-        <h6>{{ recipe.strMeasure5 }} {{ recipe.strIngredient5 }}</h6>
-        <h6>{{ recipe.strMeasure6 }} {{ recipe.strIngredient6 }}</h6>
-        <h6>{{ recipe.strMeasure7 }} {{ recipe.strIngredient7 }}</h6>
-        <h6>{{ recipe.strMeasure8 }} {{ recipe.strIngredient8 }}</h6>
-        <h6>{{ recipe.strMeasure1 }} {{ recipe.strIngredient9 }}</h6>
-        <h6>{{ recipe.strMeasure10 }} {{ recipe.strIngredient10 }}</h6>
-        <h6>{{ recipe.strMeasure11 }} {{ recipe.strIngredient11 }}</h6>
-        <h6>{{ recipe.strMeasure12 }} {{ recipe.strIngredient12 }}</h6>
-        <h6>{{ recipe.strMeasure13 }} {{ recipe.strIngredient13 }}</h6>
-        <h6>{{ recipe.strMeasure14 }} {{ recipe.strIngredient14 }}</h6>
-        <h6>{{ recipe.strMeasure15 }} {{ recipe.strIngredient15 }}</h6>
-        <h6>{{ recipe.strMeasure16 }} {{ recipe.strIngredient16 }}</h6>
-        <h6>{{ recipe.strMeasure17 }} {{ recipe.strIngredient17 }}</h6>
-        <h6>{{ recipe.strMeasure18 }} {{ recipe.strIngredient18 }}</h6>
-        <h6>{{ recipe.strMeasure19 }} {{ recipe.strIngredient19 }}</h6>
-        <h6>{{ recipe.strMeasure20 }} {{ recipe.strIngredient20 }}</h6>
+        <div class="jumbotron">
+            <h6 class="mt-1 mb-2 text-info">Ingredients</h6>
+            <h6>{{ recipe.strMeasure1 }} {{ recipe.strIngredient1 }}</h6>
+            <h6>{{ recipe.strMeasure2 }} {{ recipe.strIngredient2 }}</h6>
+            <h6>{{ recipe.strMeasure3 }} {{ recipe.strIngredient3 }}</h6>
+            <h6>{{ recipe.strMeasure4 }} {{ recipe.strIngredient4 }}</h6>
+            <h6>{{ recipe.strMeasure5 }} {{ recipe.strIngredient5 }}</h6>
+            <h6>{{ recipe.strMeasure6 }} {{ recipe.strIngredient6 }}</h6>
+            <h6>{{ recipe.strMeasure7 }} {{ recipe.strIngredient7 }}</h6>
+            <h6>{{ recipe.strMeasure8 }} {{ recipe.strIngredient8 }}</h6>
+            <h6>{{ recipe.strMeasure1 }} {{ recipe.strIngredient9 }}</h6>
+            <h6>{{ recipe.strMeasure10 }} {{ recipe.strIngredient10 }}</h6>
+            <h6>{{ recipe.strMeasure11 }} {{ recipe.strIngredient11 }}</h6>
+            <h6>{{ recipe.strMeasure12 }} {{ recipe.strIngredient12 }}</h6>
+            <h6>{{ recipe.strMeasure13 }} {{ recipe.strIngredient13 }}</h6>
+            <h6>{{ recipe.strMeasure14 }} {{ recipe.strIngredient14 }}</h6>
+            <h6>{{ recipe.strMeasure15 }} {{ recipe.strIngredient15 }}</h6>
+            <h6>{{ recipe.strMeasure16 }} {{ recipe.strIngredient16 }}</h6>
+            <h6>{{ recipe.strMeasure17 }} {{ recipe.strIngredient17 }}</h6>
+            <h6>{{ recipe.strMeasure18 }} {{ recipe.strIngredient18 }}</h6>
+            <h6>{{ recipe.strMeasure19 }} {{ recipe.strIngredient19 }}</h6>
+            <h6>{{ recipe.strMeasure20 }} {{ recipe.strIngredient20 }}</h6>
+        </div>
     </div>
     <div class="col-md-2 col-lg-6">     
         <h6 class="mt-1 mb-2 text-info">Instructions</h6>
@@ -37,7 +39,6 @@
     <div class="col-md-2 col-lg-3">
         <img src="{{recipe.strMealThumb}}" alt="{{recipe.strMeal}}" class="img-fluid">
     </div>
-
     <div class="col-12 text-right mb-5">
         <button (click)="cancel()" class="btn btn-success mt-5">Back</button>
     </div>
