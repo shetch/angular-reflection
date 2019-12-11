@@ -10,10 +10,16 @@ import { SearchService } from '../../services/search.service';
 export class SearchResultsComponent implements OnInit {
   results = [];
 
-  constructor(private route: ActivatedRoute, private searchService: SearchService) { }
+  constructor(private route: ActivatedRoute, private searchService: SearchService) {}
 
   ngOnInit() {
-    let keywords = this.route.snapshot.paramMap.get('keywords');
+    this.route.params.subscribe(routeParams => {
+      let keywords = this.route.snapshot.paramMap.get('keywords');
+      this.process(keywords);
+    });
+  }
+
+  process(keywords: any) {
     this.searchService.getResults(keywords).subscribe(results => {
       this.results = results;
     },
