@@ -14,7 +14,4 @@ export class MealComponent implements OnInit {
   ngOnInit() {
   }
 
-  showAlert() {
-    alert(this.meal.idCategory);
-  }
 }
