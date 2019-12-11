@@ -1,0 +1,12 @@
+<div class="row">
+        <div class="col-12"><h4>Please select meal</h4></div>
+        <div class="col-md-3" *ngFor="let result of results.meals">
+                <div routerLink= "/recipe/{{result.idMeal}}" class="card p-3 m-2 text-center">
+                    <div><img src="{{ result.strMealThumb }}" alt="" class="img-fluid"></div>
+                    <h6 class="mt-3">{{ result.strMeal }}</h6>
+                </div>
+        </div>
+        <div class="col-12 text-right mb-5">
+            <a routerLink= "/" class="btn btn-success mt-5">Back</a>
+        </div>
+</div>

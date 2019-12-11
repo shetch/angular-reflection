@@ -1,0 +1,7 @@
+<div class="row">
+    <div class="col-12"><h4>Please select meal</h4></div>
+    <app-listing class="col-md-3" *ngFor="let listing of listings.meals" [listing]="listing"></app-listing>
+    <div class="col-12 text-right mb-5">
+        <a routerLink= "/" class="btn btn-success mt-5">Back</a>
+    </div>
+</div>
